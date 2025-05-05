@@ -8,10 +8,8 @@ int main() {
         cout << "1. Push"  <<  endl;
         cout << "2. Pop"  <<  endl;
         cout << "3. Top"  <<  endl;
-        cout << "4. IsEmpty"  <<  endl;
-        cout << "5. IsFull"  <<  endl;
-        cout << "6. Display"  <<  endl;
-        cout << "7. Exit"  <<  endl;
+        cout << "4. Display"  <<  endl;
+        cout << "5. Exit"  <<  endl;
         cout << "Choice: ";
         cin >> choice;
 
@@ -36,22 +34,12 @@ int main() {
             } 
             case 4: 
             {
-                cout << (obj.isEmpty() ? "Yes\n" : "No\n"); 
-                break;
-            }
-            case 5: 
-            {
-                cout << (obj.isFull() ? "Yes\n" : "No\n"); 
-                break;
-            }
-            case 6: 
-            {
                 obj.display(); 
                 break;
             }
 
         }
-    } while (choice != 7);
+    } while (choice != 5);
 
     return 0;
 }
